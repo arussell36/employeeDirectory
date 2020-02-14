@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "firstName": "Joe",
+      "lastName": "McJoeface",
+      "department": "Sales",
+      "title": "Associate"
+    },
+    {
+      "id": 2,
+      "firstName": "Bobman",
+      "lastName": "Manbob",
+      "department": "Sales",
+      "title": "Lead"
+    },
+    {
+      "id": 3,
+      "firstName": "Clint",
+      "lastName": "Northwood",
+      "department": "Sales",
+      "title": "Associate"
+    },
+    {
+      "id": 4,
+      "firstName": "Dobby",
+      "lastName": "Dabs",
+      "department": "Product",
+      "title": "Associate"
+    },
+    {
+      "id": 5,
+      "firstName": "Ester",
+      "lastName": "Hesker",
+      "department": "Product",
+      "title": "Associate"
+    },
+    {
+      "id": 6,
+      "firstName": "Foolio",
+      "lastName": "Unga",
+      "department": "Product",
+      "title": "Scrum Master"
+    },
+    {
+      "id": 7,
+      "firstName": "Greta",
+      "lastName": "Bumberg",
+      "department": "Sales",
+      "title": "CEO"
+    },
+    {
+      "id": 8,
+      "firstName": "Helios",
+      "lastName": "Sunman",
+      "department": "Product",
+      "title": "Architect"
+    }
+  ]
+  
