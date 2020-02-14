@@ -1,0 +1,10 @@
+.rowContainer {
+  background: #fff;
+  border-radius: 2px;
+  height: 4vh;
+  margin: 0vh 10vw 0 10vw;
+  border-bottom: 2px solid gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import FriendCard from "./components/FriendCard";
+import DirContainer from "./components/DirContainer";
+import DirRow from "./components/DirRow";
+import DirHeader from "./components/DirHeader";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import Directory from "./Directory.json";
@@ -15,15 +17,22 @@ class App extends Component {
     return (
       <Wrapper>
         <Title>Directory List</Title>
+
+        <DirContainer>
+          <DirHeader />
+        </DirContainer>
+        
         {this.state.Directory.map(Directory => (
-          <FriendCard
+          <DirContainer>
+            <DirRow
             id={Directory.id}
             key={Directory.id}
             firstName={Directory.firstName}
             lastName={Directory.lastName}
             department={Directory.department}
             title={Directory.title}
-          />
+            />
+          </DirContainer>
         ))}
       </Wrapper>
     );
