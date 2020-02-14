@@ -54,6 +54,34 @@
       "lastName": "Sunman",
       "department": "Product",
       "title": "Architect"
+    },
+    {
+      "id": 9,
+      "firstName": "Shen",
+      "lastName": "Soria",
+      "department": "Sales",
+      "title": "Lead"
+    },
+    {
+      "id": 10,
+      "firstName": "Galio",
+      "lastName": "Protect",
+      "department": "Sales",
+      "title": "Associate"
+    },
+    {
+      "id": 11,
+      "firstName": "Zilios",
+      "lastName": "Timeman",
+      "department": "Product",
+      "title": "Architect"
+    },
+    {
+      "id": 12,
+      "firstName": "Xayah",
+      "lastName": "Veng",
+      "department": "IT",
+      "title": "Associate"
     }
   ]
   
