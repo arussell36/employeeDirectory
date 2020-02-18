@@ -1,7 +1,17 @@
 .title {
   width: 100%;
-  text-align: center;
-  font-size: 3rem;
-  text-decoration: underline;
-  margin: 2vh 0 3vh 0;
+  height: 6vh;
+  background-color: #c7c7c7;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 3vh;
+}
+
+.top {
+  height: 6vh;
+  bottom: 0vh;
+  vertical-align: text-bottom
 }

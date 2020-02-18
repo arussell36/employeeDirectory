@@ -1,0 +1,37 @@
+.whiteSpace {
+    height: 8vh;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1vw 0 1vw;
+    background-color: transparent;
+    border-right: 2px solid rgb(138, 138, 138);
+    color: rgb(214, 214, 214);
+}
+.home:hover {
+    background-color: gray;
+}
+
+.icon{
+    height: 2vh;
+}
+
+.name {
+    padding: 0 0 .5vh 2vw;
+    font-size: 4.5vh;
+}
+
+.navbar {
+    height: 5.5vh;
+    width: 100%;
+    background-color: rgb(77, 77, 77);
+    display: flex;
+}
