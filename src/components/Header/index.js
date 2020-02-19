@@ -6,7 +6,7 @@ function Header() {
     {/* Header white space */}
     <div className="whiteSpace">
         <div className="name">
-            Employee Directory
+            Great Company Inc.
         </div>
     </div>
 

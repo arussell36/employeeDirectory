@@ -22,31 +22,24 @@ class App extends Component {
       <Header />
       <Wrapper> 
         <Sidebar />
-        <UserDirectory />
+        <UserDirectory>
+          <DirContainer>
+            <DirHeader />
+          </DirContainer>
+          {this.state.Directory.map(Directory => (
+          <DirContainer>
+            <DirRow
+            id={Directory.id}
+            key={Directory.id}
+            firstName={Directory.firstName}
+            lastName={Directory.lastName}
+            department={Directory.department}
+            title={Directory.title}
+            />
+          </DirContainer>
+          ))}
+        </UserDirectory>
       </Wrapper>
-
-
-
-      {/* // <Wrapper>
-      //   <Title />
-
-      //   <DirContainer>
-      //     <DirHeader />
-      //   </DirContainer>
-        
-      //   {this.state.Directory.map(Directory => (
-      //     <DirContainer>
-      //       <DirRow
-      //       id={Directory.id}
-      //       key={Directory.id}
-      //       firstName={Directory.firstName}
-      //       lastName={Directory.lastName}
-      //       department={Directory.department}
-      //       title={Directory.title}
-      //       />
-      //     </DirContainer>
-      //   ))}
-      // </Wrapper> */}
       </>
     );
   }
