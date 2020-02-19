@@ -5,8 +5,10 @@ function Sidebar() {
     return <>
         {/* CONTAINER OF LEFT */}
         <div className="sidebarContainer">
-            <div className="filler">
+            <div className="header">
+                Client: Great Company Inc.
             </div> 
+
         </div>
     </>
 }

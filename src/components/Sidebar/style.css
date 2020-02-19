@@ -1,12 +1,17 @@
 .sidebarContainer {
     width: 13vw;
     height: 86.5vh;
-    background-color: green;
+    background-color: rgb(233, 233, 233);
     position: absolute;
     top: 13.5vh;
+    border-right: 1px solid rgb(128, 128, 128);
+    display: flex;
+    flex-direction: column;
 }
 
-.filler {
-    background-color: hotpink;
-    height: auto;
+.header {
+    width: 12vw;
+    background-color: rgb(173, 173, 173);
+    padding: 2vh .5vw 2vh .5vw;
+    border-bottom: 1px solid  rgb(128, 128, 128);
 }

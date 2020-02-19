@@ -6,7 +6,9 @@ function UserDirectory() {
     return (
         <>
         <div className="container">
-            hello
+            <div className="">
+                User Directory
+            </div>
         </div>
         </>
     )
