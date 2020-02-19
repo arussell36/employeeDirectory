@@ -3,6 +3,10 @@ import "./style.css"
 
 function UserDirectory(props) {
 
+    function search() {
+        console.log("clicky!")
+    }
+
     return (
         <>
         <div className="container">
@@ -18,7 +22,7 @@ function UserDirectory(props) {
                         Name Search: <input className="searchBar"></input>
                     </div>
 
-                    <button className="submitButton" type="submit">
+                <button className="submitButton" type="submit" onClick={() => {search()}}>
                         Search
                     </button>
                 </div>
