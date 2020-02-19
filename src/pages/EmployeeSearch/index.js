@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-import DirContainer from "../../components/DirContainer";
-import DirRow from "../../components/DirRow";
-import DirHeader from "../../components/DirHeader";
 import Wrapper from "../../components/Wrapper";
 import Directory from "./Directory.json"
 import Header from "../../components/Header";
@@ -21,23 +18,7 @@ class EmployeeSearch extends Component {
       <Header />
       <Wrapper> 
         <Sidebar />
-        <UserDirectory>
-          <DirContainer>
-            <DirHeader />
-          </DirContainer>
-          {this.state.Directory.map(Directory => (
-          <DirContainer>
-            <DirRow
-            id={Directory.id}
-            key={Directory.id}
-            firstName={Directory.firstName}
-            lastName={Directory.lastName}
-            department={Directory.department}
-            title={Directory.title}
-            />
-          </DirContainer>
-          ))}
-        </UserDirectory>
+        <UserDirectory />
       </Wrapper>
       </>
     );
