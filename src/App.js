@@ -6,6 +6,9 @@ import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import Directory from "./Directory.json";
 import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
+import UserDirectory from "./components/UserDirectory";
+
 class App extends Component {
   // Setting this.state.Directory to the Directory json array
   state = {
@@ -15,10 +18,16 @@ class App extends Component {
   // Map over this.state.Directory and render a FriendCard component for each friend object
   render() {
     return (
+      <>
       <Header />
+      <Wrapper> 
+        <Sidebar />
+        <UserDirectory />
+      </Wrapper>
 
 
-      // <Wrapper>
+
+      {/* // <Wrapper>
       //   <Title />
 
       //   <DirContainer>
@@ -37,7 +46,8 @@ class App extends Component {
       //       />
       //     </DirContainer>
       //   ))}
-      // </Wrapper>
+      // </Wrapper> */}
+      </>
     );
   }
 }

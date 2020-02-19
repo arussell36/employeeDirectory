@@ -1,0 +1,12 @@
+.sidebarContainer {
+    width: 13vw;
+    height: 86.5vh;
+    background-color: green;
+    position: absolute;
+    top: 13.5vh;
+}
+
+.filler {
+    background-color: hotpink;
+    height: auto;
+}
