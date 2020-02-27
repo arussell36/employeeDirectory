@@ -10,9 +10,16 @@ function UserDirectory(props) {
 
     const [searchbar, setSearchBar] = useState('');
 
+    let userBase = Directory;
+
+    const results = userBase.filter(employee =>
+        employee.firstName.toLowerCase().indexOf(searchbar.toLowerCase()) !== -1
+    );
+
     const handleSubmit = e => {
         e.preventDefault();
-        console.log(searchbar);
+        // console.log(searchbar);
+        console.log(results);
     }
     
     return (
@@ -28,7 +35,7 @@ function UserDirectory(props) {
                 <div className="card">
                     <form onSubmit={handleSubmit}>
                         <div className="cardText">
-                            Name Search: 
+                            Name Search:   
                                 <input
                                 className="searchBar"
                                 type="text" 
@@ -47,15 +54,15 @@ function UserDirectory(props) {
                 <DirContainer>
                     <DirHeader />
                 </DirContainer>
-                {Directory.map(Directory => (
+                {results.map(Directory => (
                     <DirContainer>
                         <DirRow
-                        id={Directory.id}
-                        key={Directory.id}
-                        firstName={Directory.firstName}
-                        lastName={Directory.lastName}
-                        department={Directory.department}
-                        title={Directory.title}
+                            id={Directory.id}
+                            key={Directory.id}
+                            firstName={Directory.firstName}
+                            lastName={Directory.lastName}
+                            department={Directory.department}
+                            title={Directory.title}
                         />
                     </DirContainer>
                 ))}

@@ -37,6 +37,8 @@
     width: 60%;
     height: 2vh;
     font-size: 2vh;
+    padding-left: 3px;
+    margin-left: 5px;
 }
 
 .submitButton {
